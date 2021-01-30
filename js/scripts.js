@@ -1,7 +1,16 @@
+
+// Business Logic
+
+let suggestionOne = function rank(javaScript, java, cSharp, python) {
+  return Math.max(javaScript, java, cSharp, python);
+}
+
+
+
+// User Interface Logic
+
 $(document).ready(function () {
-  console.log("this is working")
   $("form#survey").submit(function(event) {
-    console.log("this is also working")
     const questionOne = $("input:radio[name=field]:checked").val();
     const questionTwo = $("input:radio[name=reason]:checked").val();
     const questionThree = $("input:radio[name=favorite-website]:checked").val();
