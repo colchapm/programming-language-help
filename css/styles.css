@@ -35,3 +35,8 @@ body {
   margin: auto;
   display: block;
 }
+
+.btn:hover {
+  background: rgb(175, 16, 16);
+  color: white;
+}
