@@ -23,6 +23,10 @@ This webpage will help beginners find what programming language is right for the
   2. Navigate to the top level of the directory
   3. Open index.html in your browser 
 
+## Known Bugs
+
+If the user doesn't complete all five survey questions the webpage will alert the user, but still return suggestions. Fix needs to alert the user and not give any suggestions until all survey questions are completed.
+
 ## Link
 
 https://colchapm.github.io/programming-language-help/
