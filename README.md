@@ -1,6 +1,6 @@
-# My Portfolio Webpage
+# Programming Language Suggester
 
-### Epicodus Independent Code Review - JavaScrip and jQuery
+### Epicodus Independent Code Review - JavaScript and jQuery
 
 ### By Collin Chapman
 
