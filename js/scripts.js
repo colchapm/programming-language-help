@@ -1,13 +1,4 @@
 
-// Business Logic
-
-let suggestionOne = function rank(javaScript, java, cSharp, python) {
-  return Math.max(javaScript, java, cSharp, python);
-}
-
-
-
-// User Interface Logic
 
 $(document).ready(function () {
   $("form#survey").submit(function(event) {
@@ -68,6 +59,40 @@ $(document).ready(function () {
     }
 
 
+    let languages = [javaScript, java, cSharp, python]
+    languages.sort((a, b) => b - a);
+
+    for (let i = 0; i < 3; i += 1) {
+      if (languages[i] === javaScript) {
+        $("#suggestion").append(`<li>Our suggestion #${i + 1} is javaScript</li>`);
+      } else if (languages[i] === java) {
+        $("#suggestion").append(`<li>Our suggestion #${i + 1} is Java</li>`)
+      } else if (languages[i] === cSharp) {
+        $("#suggestion").append(`<li>Our suggestion #${i + 1} is C#</li>`);
+      } else if (languages[i] === python) {
+        $("#suggestion").append(`<li>Our suggestion #${i + 1} is Python</li>`);
+      }
+    }
+
+    // for (let i = 0; i < 3; i += 1) {
+    //   if(languages[i] === javaScript) {
+    //     $("#suggestion").append(`<p>Our suggestion #${i + 1} is javaScript</p>`);
+    //   } else if (languages)
+    // }
+      
+    
+
+
+
+    // document.getElementById("suggestOne").innerHTML = python;
+    // document.getElementById("suggestTwo").innerHTML = cSharp;
+    // document.getElementById("suggestThree").innerHTML = java;
+    $("form#survey").hide();
+    $("#suggestion").show();
     event.preventDefault();
   });
 });
+
+
+
+
