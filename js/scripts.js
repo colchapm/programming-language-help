@@ -19,6 +19,8 @@ $(document).ready(function () {
       java += 5;
       cSharp += 5;
       python += 5;
+    } else {
+      alert("Please answer every question completely.");
     }
 
     if (questionTwo === "money") {
@@ -28,6 +30,8 @@ $(document).ready(function () {
       javaScript += 4;
     } else if (questionTwo === "career-change") {
       cSharp += 4;
+    } else {
+      alert("Please answer every question completely.")
     }
 
     if (questionThree === "instagram") {
@@ -38,6 +42,8 @@ $(document).ready(function () {
       java += 3;
     } else if (questionThree === "wikipedia") {
       javaScript += 3;
+    } else {
+      alert("Please answer every question completely.")
     }
 
     if (questionFour === "gryffindor") {
@@ -48,6 +54,8 @@ $(document).ready(function () {
       java += 2;
     } else if (questionFour === "slytherin") {
       javaScript += 2;
+    } else {
+      alert("Please answer every question completely.")
     }
 
     if (questionFive === "Yes") {
@@ -56,6 +64,8 @@ $(document).ready(function () {
     } else if (questionFive === "No") {
       python += 1;
       cSharp += 1;
+    } else {
+      alert("Please answer every question completely.")
     }
 
 
@@ -64,7 +74,7 @@ $(document).ready(function () {
 
     for (let i = 0; i < 3; i += 1) {
       if (languages[i] === javaScript) {
-        $("#suggestion").append(`<li>Our suggestion #${i + 1} is javaScript</li>`);
+        $("#suggestion").append(`<li>Our suggestion #${i + 1} is JavaScript</li>`);
       } else if (languages[i] === java) {
         $("#suggestion").append(`<li>Our suggestion #${i + 1} is Java</li>`)
       } else if (languages[i] === cSharp) {
@@ -73,22 +83,8 @@ $(document).ready(function () {
         $("#suggestion").append(`<li>Our suggestion #${i + 1} is Python</li>`);
       }
     }
-
-    // for (let i = 0; i < 3; i += 1) {
-    //   if(languages[i] === javaScript) {
-    //     $("#suggestion").append(`<p>Our suggestion #${i + 1} is javaScript</p>`);
-    //   } else if (languages)
-    // }
-      
-    
-
-
-
-    // document.getElementById("suggestOne").innerHTML = python;
-    // document.getElementById("suggestTwo").innerHTML = cSharp;
-    // document.getElementById("suggestThree").innerHTML = java;
     $("form#survey").hide();
-    $("#suggestion").show();
+    $("#results").show();
     event.preventDefault();
   });
 });
