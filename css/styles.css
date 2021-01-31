@@ -55,3 +55,8 @@ a {
 #results {
   display: none;
 }
+
+ul {
+  margin: 40px;
+  font-weight: bold;
+}
