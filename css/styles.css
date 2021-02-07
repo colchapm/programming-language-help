@@ -19,9 +19,6 @@ body {
   height: 100%;
   margin: 0;
   font-family: Optima, sans-serif;
-}
-
-.background {
   background: rgb(63,94,251);
   background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(143,143,138,0) 100%);
 }
